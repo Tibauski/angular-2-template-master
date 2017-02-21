@@ -1,0 +1,17 @@
+<h2>Berichten van <b>Tibo De Clercq</b></h2>
+<table class="table table-hover ">
+  <thead>
+    <tr>
+      <td class="glyphicon glyphicon-folder-open"></td>
+      <td>Onderwerp</td>
+      <td>Inhoud</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="#v of videos" (click)="onSelect(v)">
+      <td >{{ v.id }}</td>
+      <td>{{ v.title }}</td>
+      <td>{{ v.desc }}</td>
+    </tr>
+  </tbody>
+</table>
